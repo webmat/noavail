@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'lib/noavail'
+include NoAvail
+
+
+names, extensions, header = read_params(ARGV)
+
+lines, longest_name_seen = verify(names, extensions)
+
+
+table = [header] + lines
+puts
+table.each do |row|
+  puts row.shift.rjust(longest_name_seen) + "\t" + row.join("\t")
+end

@@ -1,0 +1,8 @@
+A simple command-line tool to check domain availability for many domains and TLDs at the same time.
+
+Dependencies
+The tool:
+- the 'whois' gem
+
+The spec suite:
+- rSpec
