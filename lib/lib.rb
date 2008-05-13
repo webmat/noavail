@@ -19,7 +19,7 @@ module NoAvail
     return names, extensions, header
   end
 
-  def verify_all(names, extensions)
+  def verify(names, extensions)
     VERIFICATION_STRATEGY.verify(names, extensions)
   end
 

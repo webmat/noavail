@@ -1,4 +1,22 @@
-A simple command-line tool to check domain availability for many domains and TLDs at the same time.
+A simple command-line tool to quickly check domain availability for multiple domains and TLDs at the same time.
+
+
+
+Usage:
+
+$ ./noavail microsoft intel
+Yields
+   Avail?    .com    .net    .org
+microsoft     NO      NO      NO
+    intel     NO      yes     yes
+
+$ ./noavail microsoft intel . ca cx
+Yields
+   Avail?    .com    .net    .org    .ca    .cx
+microsoft     NO      NO      NO      NO     yes
+    intel     NO      yes     yes     NO     yes
+
+
 
 Dependencies
 The tool:
