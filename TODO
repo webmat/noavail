@@ -1,0 +1,2 @@
+- the whois lib is failing when using OpenDNS
+  - it's gonna be hard to make automated test for that :-)
